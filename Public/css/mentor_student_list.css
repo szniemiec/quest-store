@@ -70,14 +70,7 @@ header > .user-profile {
     margin-right: auto;
     width: 20%;
 }
-.logout a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.logout a:hover {
-    color: #1550E8;
 
-}
 .user-profile img {
     display: flex;
     margin-top: 1em;
@@ -94,8 +87,77 @@ header > .user-profile {
 }
 
 .content {
-    background-color: rgba(97, 97, 97, 0.35);
+
     padding: 2em;
+}
+.students  {
+
+    background-color: rgba(97, 97, 97, 0.35);
+    border-radius: 1em;
+    /*box-sizing: border-box;*/
+    margin: 0.2em;
+    padding: 1em;
+}
+.students input {
+
+    background-color: rgba(47, 44, 44, 0.27);
+    outline: none;
+    font-size: 0.8em;
+
+    border-radius: 0.7em;
+    border: 1px solid rgba(47, 44, 44, 0.27);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+.students input:hover{
+    color: #1550E8;
+}
+
+
+.students div {
+    /*display: inline-block;*/
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.7em;
+    display: inline-block;
+
+    flex-direction: column;
+
+    height: 2em;
+    width: 50%;
+    margin: 0.4em;
+
+}
+.students label{
+    display: inline-block;
+    width: 80%;
+    margin-left: 5%;
+}
+.students div:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.logout a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logout a:hover {
+    color: #1550E8;
+}
+.message {
+    border: 2px solid gray;
+    font-size: 0.6em;
+    background-color: rgba(255, 255, 255, 0.14);
+
+    border-radius: 1em;
+    color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0.5em;
+    width: 25em;
+    margin: 1em;
+}
+.hide {
+    display: none;
 }
 
 @media screen and (max-device-width: 376px) {
@@ -105,7 +167,7 @@ header > .user-profile {
         margin-top: 8em;
     }
 
-    .data {
+    .students {
         grid-template-columns: repeat(1, 1fr);;
     }
 
@@ -114,6 +176,7 @@ header > .user-profile {
     }
 
     .user-profile {
+
         display: none;
     }
 
@@ -121,7 +184,7 @@ header > .user-profile {
 
 .navigation {
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -131,7 +194,7 @@ header > .user-profile {
 
 .navigation a {
     font-size: 18px;
-    /*font-family: arial, helvetica, sans-serif;*/
+
     margin-top: 3em;
     margin-left: 1em;
     display: inline;

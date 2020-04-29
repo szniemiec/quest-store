@@ -1,8 +1,12 @@
 body {
     margin-top: 10em;
     font-size: 12px;
-    background-color: gray;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(31, 31, 31) 100%);
 }
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
 
 .container {
     display: flex;
@@ -17,7 +21,7 @@ header {
     top: 0;
     left: 0;
 
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0);
     height: 9em;
     width: 100%;
     display: flex;
@@ -25,7 +29,7 @@ header {
 }
 
 header > .logo {
-    width: 9%;
+    width: 9%;    background-color: rgba(255, 255, 255, 0.14);
 }
 
 .logo img {
@@ -63,27 +67,33 @@ header > .user-profile {
     display: flex;
     flex-direction: column;
     width: 20%;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.14);
     margin-right: 2em;
 }
 
+header > .user-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.14);
+    margin-right: auto;
+    width: 23%;
+}
 .user-profile img {
     display: flex;
     margin-top: 1em;
-    margin-left: 15em;
+    margin-left: 1em;
 }
-
-.user-profile p {
-
-}
-
 .user-profile photo {
     display: flex;
     width: 10px;
 }
+.user-data {
+    font-size: 1.3em;
+}
 
 .content {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     padding: 2em;
 }
 
@@ -91,7 +101,7 @@ header > .user-profile {
 
     border-radius: 1em;
     margin: 1em;
-    background-color: rosybrown;
+    background-color: rgba(97, 97, 97, 0.35);
     font-size: 1.5em;
     /*display: f;*/
     justify-content: left;
@@ -108,7 +118,7 @@ header > .user-profile {
 
 .data {
     width: 45%;
-    background-color: cadetblue;
+    background-color: rgba(255, 255, 255, 0.14);
     border-radius: 10px;
     padding: 0.8em;
     margin: 0.2em;
@@ -119,6 +129,13 @@ header > .user-profile {
     display: block;
     justify-content: left;
 
+}
+.logout a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logout a:hover {
+    color: #1550E8;
 }
 
 @media screen and (max-device-width: 376px) {
@@ -144,17 +161,16 @@ header > .user-profile {
 
 .navigation {
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     list-style: none;
-    background-color: rgb(72, 83, 83);
+    background-color: rgba(255, 255, 255, 0.14);
 }
 
 .navigation a {
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
+
     margin-top: 3em;
     margin-left: 1em;
     display: inline;
