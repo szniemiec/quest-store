@@ -1,8 +1,7 @@
 body {
     font-size: 24px;
-    text-align: center;
     margin-top: 6%;
-    background-color: rgba(118, 90, 42, 0.76);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(233,187,90,1) 100%);
 }
 
 * {
@@ -14,8 +13,7 @@ form > input, button {
     border-radius: 0.7em;
     font-size: 1em;
     line-height: 2em;
-    display: block;
-    margin: 1em;
+    margin: 0.4em;
     padding: 0 1em;
     width: 20em;
 }
@@ -27,18 +25,16 @@ form > input {
 button {
     background: #28301e;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
     color: #FFFFFF;
-    margin: 1em;
-    width: 20em;
+    margin-top: 1em;
 }
 
 button > i {
-    margin-right: 1em;
+    margin-right: 0.3em;
 }
 
 p {
-    padding: 1em;
+    padding: 0.6em;
 }
 
 .message {
@@ -54,12 +50,11 @@ p {
     display: none;
 }
 
-.centered {
-    margin-left: 31%;
-}
-
-.centered-button {
-    margin-left: 33%;
+.centered-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-device-width: 400px) {
