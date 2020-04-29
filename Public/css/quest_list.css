@@ -7,7 +7,6 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    /*width:100%;*/
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -61,26 +60,25 @@ header > nav {
 
 header > .user-profile {
     display: flex;
-    flex-direction: column;
-    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: red;
-    margin-right: 2em;
+    margin-left:auto;
+    width: 20%;
 }
 
 .user-profile img {
     display: flex;
     margin-top: 1em;
-    margin-left: 15em;
-}
-
-.user-profile p {
-    float: left;
-
+    margin-left: 1em;
 }
 
 .user-profile photo {
     display: flex;
-    width: 10px;
+}
+
+.user-data {
+    font-size: 1.3em;
 }
 
 .content {
@@ -89,9 +87,6 @@ header > .user-profile {
 }
 
 .cards {
-    /* display: flex;
-    flex-direction: row; */
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
