@@ -23,10 +23,11 @@ form > input {
 }
 
 button {
-    background: #28301e;
+    background:#1550E8;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     margin-top: 1em;
+    width: 10em;
 }
 
 button > i {
@@ -38,11 +39,15 @@ p {
 }
 
 .message {
-    background-color: red;
+    border: 2px solid gray;
+    font-size: 0.6em;
+    background-color: #049300;
+
     border-radius: 1em;
-    color: bisque;
-    padding: 1em;
-    width: 20em;
+    color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0.5em;
+    width: 25em;
     margin: 1em;
 }
 
