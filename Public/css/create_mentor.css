@@ -23,9 +23,11 @@ header {
     display: flex;
     flex-direction: row;
 }
-header > .logo{
+
+header > .logo {
     width: 9%;
 }
+
 .logo img {
     position: fixed;
     left: 1.5%;
@@ -34,7 +36,8 @@ header > .logo{
     bottom: 23.36%;
     color: #1550E8;
 }
-.logo p{
+
+.logo p {
     position: absolute;
     left: 1%;
     right: 0%;
@@ -42,7 +45,7 @@ header > .logo{
     bottom: 0%;
 
     font-family: Stalinist One;
-    font-style: normal ;
+    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
@@ -50,10 +53,12 @@ header > .logo{
     align-items: center;
     color: #1550E8;
 }
+
 header > nav {
     width: 80%;
     background-color: cornsilk;
 }
+
 header > .user-profile {
     display: flex;
     flex-direction: column;
@@ -61,39 +66,46 @@ header > .user-profile {
     background-color: red;
     margin-right: 2em;
 }
-.user-profile img{
+
+.user-profile img {
     display: flex;
     margin-top: 1em;
     margin-left: 15em;
 }
-.user-profile p{
+
+.user-profile p {
 
 }
+
 .user-profile photo {
     display: flex;
     width: 10px;
 }
+
 .content {
     background-color: aquamarine;
     padding: 2em;
 }
+
 .cards {
 
     border-radius: 1em;
     margin: 1em;
-    background-color:rosybrown;
+    background-color: rosybrown;
     font-size: 1.5em;
     /*display: f;*/
     justify-content: left;
 
 }
- .cards input[type="surename"]{
+
+.cards input[type="surename"] {
     background-color: rebeccapurple;
     outline: none;
-     display: inline;
-     /*justify-content: center;*/
-     /*align-content: center;*/
+    display: inline;
+    /*justify-content: center;*/
+    /*align-content: center;*/
 }
+
 .data {
     width: 45%;
     background-color: cadetblue;
@@ -108,23 +120,28 @@ header > .user-profile {
     justify-content: left;
 
 }
-@media screen and (max-device-width: 376px){
+
+@media screen and (max-device-width: 376px) {
     body {
         margin: 0;
         font-size: 48px;
         margin-top: 8em;
     }
-    .cards{
+
+    .cards {
         grid-template-columns: repeat(1, 1fr);;
     }
+
     header {
         flex-direction: column;
     }
+
     .user-profile {
         display: none;
     }
 
 }
+
 .navigation {
     font-size: 18px;
     font-family: arial, helvetica, sans-serif;
@@ -134,16 +151,18 @@ header > .user-profile {
     list-style: none;
     background-color: rgb(72, 83, 83);
 }
-.navigation a{
+
+.navigation a {
     font-size: 18px;
     font-family: arial, helvetica, sans-serif;
     margin-top: 3em;
     margin-left: 1em;
-    display:inline;
+    display: inline;
     padding: 0.7em;
     color: whitesmoke;
     text-decoration: none;
 }
+
 .navigation a:hover {
-    background:#1550E8
+    background: #1550E8
 }
