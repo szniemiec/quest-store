@@ -86,7 +86,7 @@ header > .user-profile {
     padding: 2em;
 }
 
-.students {
+.mentors {
     background-color: azure;
     border-radius: 1em;
     box-sizing: border-box;
@@ -94,7 +94,7 @@ header > .user-profile {
     padding: 1em;
 }
 
-.student {
+.mentor {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ header > .user-profile {
         margin-top: 8em;
     }
 
-    .students {
+    .mentors {
         grid-template-columns: repeat(1, 1fr);;
     }
 

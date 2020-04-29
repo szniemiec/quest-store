@@ -48,7 +48,7 @@ header > .logo {
     bottom: 0%;
 
     font-family: Stalinist One;
-    font-style: normal ;
+    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
@@ -56,29 +56,35 @@ header > .logo {
     align-items: center;
     color: #1550E8;
 }
+
 header > nav {
     width: 80%;
     background-color: cornsilk;
 }
+
 header > .user-profile {
     display: flex;
-    flex-direction: column;
-    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: red;
-    margin-right: 2em;
+    margin-left: auto;
+    width: 20%;
 }
-.user-profile img{
+
+.user-profile img {
     display: flex;
     margin-top: 1em;
-    margin-left: 15em;
+    margin-left: 1em;
 }
-.user-profile p{
 
-}
 .user-profile photo {
     display: flex;
-    width: 10px;
 }
+
+.user-data {
+    font-size: 1.3em;
+}
+
 .content {
     background-color: aquamarine;
     padding: 2em;
@@ -88,6 +94,9 @@ header > .user-profile {
     margin: 1em;
     background-color:rosybrown;
     font-size: 1.5em;
+    /*display: f;*/
+    justify-content: left;
+
 }
     .infos label{
         display: inline-block;
@@ -148,6 +157,7 @@ header > .user-profile {
     }
 
 }
+
 .navigation {
     font-size: 18px;
     font-family: arial, helvetica, sans-serif;
