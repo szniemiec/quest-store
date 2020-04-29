@@ -61,25 +61,25 @@ header > nav {
 
 header > .user-profile {
     display: flex;
-    flex-direction: column;
-    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: red;
-    margin-right: 2em;
+    margin-left: auto;
+    width: 20%;
 }
 
 .user-profile img {
     display: flex;
     margin-top: 1em;
-    margin-left: 15em;
-}
-
-.user-profile p {
-
+    margin-left: 1em;
 }
 
 .user-profile photo {
     display: flex;
-    width: 10px;
+}
+
+.user-data {
+    font-size: 1.3em;
 }
 
 .content {
