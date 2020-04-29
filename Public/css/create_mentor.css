@@ -89,7 +89,7 @@ header > .user-profile {
 }
     .infos label{
         display: inline-block;
-
+        width:30%
     }
  .infos input{
     outline: none;
@@ -107,11 +107,28 @@ header > .user-profile {
      padding: 0.8em;
      margin: 0.2em;
  }
-/*.data {*/
-/*    font-size: 1em;*/
-/*}*/
 
+.navigation {
+    font-size: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: rgb(72, 83, 83);
+}
+.navigation a{
+    font-size: 18px;
 
+    margin-top: 3em;
+    margin-left: 1em;
+    display:inline;
+    padding: 0.7em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navigation a:hover {
+    background:#1550E8
+}
 
 
 
@@ -133,7 +150,7 @@ header > .user-profile {
 }
 .navigation {
     font-size: 18px;
-    /*font-family: arial, helvetica, sans-serif;*/
+    /
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -142,7 +159,7 @@ header > .user-profile {
 }
 .navigation a{
     font-size: 18px;
-    /*font-family: arial, helvetica, sans-serif;*/
+
     margin-top: 3em;
     margin-left: 1em;
     display:inline;
