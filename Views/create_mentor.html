@@ -2,48 +2,66 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../Public/css/create_mentor.css">
+    <link rel="stylesheet" type="text/css" href="../css/create_mentor.css">
     <title>Queststore</title>
     <script src="https://kit.fontawesome.com/d9b16d40ba.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Roboto+Slab:wght@500&display=swap"
+          rel="stylesheet">
     <meta name="description" content="QUEST- queststore from Codecool">
 </head>
 <body>
 <div class="container">
     <header>
         <div class="logo">
-            <img src="../Icons/chess-queen-solid.png" alt="logo" height="75" width="80">
+            <img src="chess-queen-solid.png" alt="logo" height="75" width="80">
             <p>Quest</p>
         </div>
         <nav class="navigation">
-            <a href="create_mentor.html">Utwórz mentora</a>
-            <a href="contact.html">Utwórz klasę</a>
-            <a href="mentor_list.html">Lista mentorów</a>
-            <a href="student_list.html">Lista studentów</a>
+            <a href="main.html">Create Mentor</a>
+            <a href="contact.html">Create Class</a>
+            <a href="aboutme.html">Mentors list</a>
+            <a href="contact.html">Students list</a>
         </nav>
 
         <div class="user-profile">
             <div class="photo">
                 <img src="../Icons/no_photo.jpg" alt="no photo" width="80" height="80">
             </div>
-            <div class="user-data">
-                <p>Adam Kowalski</p>
-                <p>Administrator</p>
-                <p>Log out</p>
-            </div>
+            <p>Adam Kowalski</p>
+            <p>Administrator</p>
+            <p>Log out</p>
         </div>
-
     </header>
-    <div class="cards">
-        <p>Utwórz mentora</p>
+
+    <div class="infos">
+        <p>Create mentor</p>
         <form action="..." enctype="multipart/form-data">
-            <label class="data">Imię: <input type="surename" name="surename"></label>
-            <label class="data">Nazwisko: <input type="name" name="name"> </label>
-            <label class="data">e-mail: <input type="email" name="email"></label>
-            <label class="data">hasło: <input type="password" name="password"></label>
-            <label class="data">powtórz hasło: <input type="repeatpassword" name="repeatpassword"></label>
-            <input type="file" name="photo">
-            <input type="submit" name="button" value="Zatwierdź"></label>
+            <div>
+                <label class="data">Surname: </label>
+                <input type="text" name="surname">
+            </div>
+            <div>
+                <label class="data"> Name:</label>
+                <input type="name" name="name">
+            </div>
+            <div>
+                <label class="data">e-mail:</label>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <label class="data">password:</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label class="data">Repeat password:</label>
+                <input type="repeatpassword" name="repeatpassword">
+            </div>
+            <div>
+                <label class="data"> Profile photo:</label>
+                <input type="file" name="photo">
+            </div>
+                <input type="submit" name="button" value="Confirm">
         </form>
     </div>
 </div>
