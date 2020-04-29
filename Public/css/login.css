@@ -34,7 +34,7 @@ button > i {
 }
 
 p {
-    /*padding: 0.6em;*/
+    padding: 0.6em;
 }
 
 .message {
@@ -50,7 +50,7 @@ p {
     display: none;
 }
 
-.centered {
+.centered-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
