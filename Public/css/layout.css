@@ -1,7 +1,11 @@
 body {
     margin-top: 10em;
     font-size: 12px;
-    background-color: gray;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(31, 31, 31) 100%);
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
 }
 
 .container {
@@ -78,7 +82,7 @@ header > .user-profile {
     background-color: aquamarine;
     padding: 2em;
 }
-.cards{
+.infos{
     /* display: flex;
     flex-direction: row; */
 
@@ -107,7 +111,7 @@ header > .user-profile {
         font-size: 48px;
         margin-top: 8em;
     }
-    .cards{
+    .infos{
         grid-template-columns: repeat(1, 1fr);;
     }
     header {
@@ -120,7 +124,7 @@ header > .user-profile {
 }
 .navigation {
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
+    /*font-family: arial, helvetica, sans-serif;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -129,7 +133,7 @@ header > .user-profile {
 }
 .navigation a{
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
+    /*font-family: arial, helvetica, sans-serif;*/
     margin-top: 3em;
     margin-left: 1em;
     display:inline;
