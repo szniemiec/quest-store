@@ -1,7 +1,7 @@
 body {
     margin-top: 10em;
     font-size: 12px;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(31, 31, 31) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(31, 31, 31) 100%);
 }
 
 * {
@@ -67,7 +67,7 @@ header > .user-profile {
     flex-direction: row;
     justify-content: space-around;
     background-color: red;
-    margin-left:auto;
+    margin-right: auto;
     width: 20%;
 }
 
@@ -79,6 +79,7 @@ header > .user-profile {
 
 .user-profile photo {
     display: flex;
+    width: 10px;
 }
 
 .user-data {

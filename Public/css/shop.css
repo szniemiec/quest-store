@@ -1,13 +1,15 @@
 body {
     margin-top: 10em;
     font-size: 12px;
-    background-color: gray;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(31, 31, 31) 100%);
+}
+* {
+    font-family: 'Roboto Slab', serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    /*width:100%;*/
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -17,9 +19,9 @@ header {
     top: 0;
     left: 0;
 
-    background-color: darkslategrey;
+    background-color: rgba(47, 79, 79, 0);
     height: 9em;
-    width: 130%;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -61,37 +63,30 @@ header > nav {
 
 header > .user-profile {
     display: flex;
-    flex-direction: column;
-    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: red;
-    margin-right: 24em;
+    margin-right: auto;
+    width: 23%;
 }
-
 .user-profile img {
     display: flex;
-    margin-top: 2em;
-    margin-left: 15em;
+    margin-top: 1em;
+    margin-left: 1em;
 }
-
-.user-profile p {
-    float: left;
-
-}
-
 .user-profile photo {
     display: flex;
     width: 10px;
 }
-
+.user-data {
+    font-size: 1.3em;
+}
 .content {
     background-color: aquamarine;
     padding: 2em;
 }
-
 .cards {
-    /* display: flex;
-    flex-direction: row; */
-
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
@@ -173,7 +168,7 @@ header > .user-profile {
     flex-flow: row wrap;
     justify-content: center;
     list-style: none;
-    background-color: rgb(72, 83, 83);
+    background-color: rgba(72, 83, 83, 0);
 }
 
 .navigation a {

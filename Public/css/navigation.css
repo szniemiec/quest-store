@@ -1,13 +1,16 @@
 body {
     margin-top: 10em;
     font-size: 12px;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(31, 31, 31) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(31, 31, 31) 100%);
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    /*width:100%;*/
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -23,9 +26,11 @@ header {
     display: flex;
     flex-direction: row;
 }
-header > .logo{
+
+header > .logo {
     width: 9%;
 }
+
 .logo img {
     position: fixed;
     left: 1.5%;
@@ -34,7 +39,8 @@ header > .logo{
     bottom: 23.36%;
     color: #1550E8;
 }
-.logo p{
+
+.logo p {
     position: absolute;
     left: 1%;
     right: 0%;
@@ -42,7 +48,7 @@ header > .logo{
     bottom: 0%;
 
     font-family: Stalinist One;
-    font-style: normal ;
+    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
@@ -50,51 +56,62 @@ header > .logo{
     align-items: center;
     color: #1550E8;
 }
+
 header > nav {
     width: 80%;
     background-color: cornsilk;
 }
+
 header > .user-profile {
     display: flex;
-    flex-direction: column;
-    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: red;
-    margin-right: 2em;
+    margin-right: auto;
+    width: 20%;
 }
-.user-profile img{
+
+.user-profile img {
     display: flex;
     margin-top: 1em;
-    margin-left: 15em;
+    margin-left: 1em;
 }
-.user-profile p{
-    float: left;
 
-}
 .user-profile photo {
     display: flex;
     width: 10px;
 }
+
+.user-data {
+    font-size: 1.3em;
+}
+
 .content {
     background-color: aquamarine;
     padding: 2em;
 }
-@media screen and (max-device-width: 376px){
+
+@media screen and (max-device-width: 376px) {
     body {
         margin: 0;
         font-size: 48px;
         margin-top: 8em;
     }
-    .infos{
+
+    .infos {
         grid-template-columns: repeat(1, 1fr);;
     }
+
     header {
         flex-direction: column;
     }
+
     .user-profile {
         display: none;
     }
 
 }
+
 .navigation {
     font-size: 18px;
     font-family: arial, helvetica, sans-serif;
@@ -104,16 +121,18 @@ header > .user-profile {
     list-style: none;
     background-color: rgb(72, 83, 83);
 }
-.navigation a{
+
+.navigation a {
     font-size: 18px;
     font-family: arial, helvetica, sans-serif;
     margin-top: 3em;
     margin-left: 1em;
-    display:inline;
+    display: inline;
     padding: 0.7em;
     color: whitesmoke;
     text-decoration: none;
 }
+
 .navigation a:hover {
-    background:#1550E8
+    background: #1550E8
 }

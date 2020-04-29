@@ -3,6 +3,9 @@ body {
     font-size: 12px;
     background-color: gray;
 }
+* {
+    font-family: 'Roboto Slab', serif;
+}
 
 .container {
     display: flex;
