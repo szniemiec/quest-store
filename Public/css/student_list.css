@@ -77,6 +77,10 @@ header > .user-profile {
     display: flex;
 }
 
+.user-data {
+    font-size: 1.3em;
+}
+
 .content {
     background-color: aquamarine;
     padding: 2em;
