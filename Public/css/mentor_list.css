@@ -63,7 +63,7 @@ header > .user-profile {
     flex-direction: row;
     justify-content: space-around;
     background-color: red;
-    margin-left:auto;
+    margin-left: auto;
     width: 20%;
 }
 
@@ -86,26 +86,24 @@ header > .user-profile {
     padding: 2em;
 }
 
-.quests {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em;
+.mentors {
     background-color: azure;
     border-radius: 1em;
-    margin: 1em;
+    box-sizing: border-box;
+    margin: 0.2em;
+    padding: 1em;
 }
 
-.quest {
-
-    background-color: cadetblue;
-    height: 300px;
-    margin: 1em;
-    font-size: 1.5em;
-    padding: 1em;
-
+.mentor {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+    height: 3em;
+    width: 95%;
+    margin: 0.4em;
+    font-size: 1.5em;
 }
 
 @media screen and (max-device-width: 376px) {
@@ -115,7 +113,7 @@ header > .user-profile {
         margin-top: 8em;
     }
 
-    .quests {
+    .mentors {
         grid-template-columns: repeat(1, 1fr);;
     }
 
