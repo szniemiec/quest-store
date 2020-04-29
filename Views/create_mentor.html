@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/create_mentor.css">
+    <link rel="stylesheet" type="text/css" href="../Public/css/create_mentor.css">
     <title>Queststore</title>
     <script src="https://kit.fontawesome.com/d9b16d40ba.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
@@ -14,23 +14,27 @@
 <div class="container">
     <header>
         <div class="logo">
-            <img src="chess-queen-solid.png" alt="logo" height="75" width="80">
+            <img src="../Icons/chess-queen-solid.png" alt="logo" height="75" width="80">
             <p>Quest</p>
         </div>
+
         <nav class="navigation">
-            <a href="main.html">Create Mentor</a>
+            <a href="create_mentor.html">Create Mentor</a>
             <a href="contact.html">Create Class</a>
-            <a href="aboutme.html">Mentors list</a>
-            <a href="contact.html">Students list</a>
+            <a href="mentor_list.html">Mentors list</a>
+            <a href="student_list.html">Students list</a>
         </nav>
 
         <div class="user-profile">
             <div class="photo">
                 <img src="../Icons/no_photo.jpg" alt="no photo" width="80" height="80">
             </div>
-            <p>Adam Kowalski</p>
-            <p>Administrator</p>
-            <p>Log out</p>
+
+            <div class="user-data">
+                <p>Adam Kowalski</p>
+                <p>Administrator</p>
+                <p>Log out</p>
+            </div>
         </div>
     </header>
 
@@ -61,7 +65,7 @@
                 <label class="data"> Profile photo:</label>
                 <input type="file" name="photo">
             </div>
-                <input type="submit" name="button" value="Confirm">
+            <input type="submit" name="button" value="Confirm">
         </form>
     </div>
 </div>
