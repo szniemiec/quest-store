@@ -132,6 +132,7 @@ header > .user-profile {
     width: 100%;
     display: flex;
     text-align: center;
+    flex-direction: column;
 }
 
 .card-pillPrice {
