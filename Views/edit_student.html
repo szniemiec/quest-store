@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../Public/css/create_mentor.css">
+    <link rel="stylesheet" type="text/css" href="../Public/css/edit_student.css">
     <title>Queststore</title>
     <script src="https://kit.fontawesome.com/d9b16d40ba.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Roboto+Slab:wght@500&display=swap"
           rel="stylesheet">
+    <script type="text/javascript" src="../Public/js/script.js"></script>
     <meta name="description" content="QUEST- queststore from Codecool">
 </head>
 <body>
@@ -19,10 +20,10 @@
         </div>
 
         <nav class="navigation">
-            <a href="create_mentor.html">Create Mentor</a>
-            <a href="contact.html">Create Class</a>
-            <a href="mentor_list.html">Mentors list</a>
-            <a href="student_list.html">Students list</a>
+            <a href="mentor_quest.html">Your Quests</a>
+            <a href="mentor_add_event.html">Add event</a>
+            <a href="mentor_shop.html">Shop</a>
+            <a href="mentor_student_list.html">Students list</a>
         </nav>
 
         <div class="user-profile">
@@ -31,46 +32,40 @@
             </div>
 
             <div class="user-data">
-                <p>Adam Kowalski/p>
-                <p>Administrator</p>
+                <p>Adam Kukuła</p>
+                <p>Mentor</p>
                 <div class="logout">
                     <a href="login.html"> Log out</a>
                 </div>
             </div>
         </div>
-    </header>
 
-    <div class="infos">
-        <p>Create mentor</p>
+<!--        <div class="message hide">-->
+<!--            Login successful!-->
+<!--        </div>-->
+    </header>
+    <div class="info">
+        <p>Add new event</p>
         <form action="..." enctype="multipart/form-data">
             <div>
                 <label class="data">Surname: </label>
-                <input type="text" name="surname">
+                <input type="text" name="title" value="Adam">
             </div>
             <div>
                 <label class="data"> Name:</label>
-                <input type="name" name="name">
+                <input type="name" name="description" value="Nowak">
             </div>
             <div>
-                <label class="data">e-mail:</label>
-                <input type="email" name="email">
+                <label class="data">e-mail adress:</label>
+                <input type="email" name="value" value="adamnowak@gmail.com">
             </div>
             <div>
-                <label class="data">password:</label>
-                <input type="password" name="password">
+                <label class="data">Birth date:</label>
+                <input type="datebirth" name="value" value="12.11.1987">
             </div>
-            <div>
-                <label class="data">Repeat password:</label>
-                <input type="repeatpassword" name="repeatpassword">
-            </div>
-            <div>
-                <label class="data"> Profile photo:</label>
-                <input type="file" name="photo">
-            </div>
-            <input type="submit" name="button" value="Confirm">
+            <input type="submit" name="button" value="Confirm" onclick="showMessageconfirm()">
         </form>
     </div>
 </div>
-
 </body>
 </html>

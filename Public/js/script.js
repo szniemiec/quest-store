@@ -6,3 +6,7 @@ function showMessage() {
 function showStudents() {
     window.location="./students.html"
 }
+function showMessageconfirm() {
+    document.querySelector(".message").classList.toggle("hide");
+    return false;
+}

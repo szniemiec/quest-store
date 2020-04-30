@@ -28,7 +28,8 @@ header {
 }
 
 header > .logo {
-    width: 9%;    background-color: rgba(255, 255, 255, 0.14);
+    background-color: rgba(255, 255, 255, 0.14);
+    width: 9%;
 }
 
 .logo img {
@@ -67,8 +68,18 @@ header > .user-profile {
     flex-direction: row;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.14);
-    margin-right: auto;
+    margin-left: auto;
     width: 20%;
+}
+
+.user-profile img {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.user-data {
+    font-size: 1.3em;
 }
 .logout a{
     text-decoration: none;
@@ -78,24 +89,63 @@ header > .user-profile {
     color: #1550E8;
 
 }
-.user-profile img {
-    display: flex;
-    margin-top: 1em;
-    margin-left: 1em;
-}
-
-.user-profile photo {
-    display: flex;
-    width: 10px;
-}
-
-.user-data {
-    font-size: 1.3em;
-}
 
 .content {
-    background-color: rgba(97, 97, 97, 0.35);
+
     padding: 2em;
+}
+.info {
+    border-radius: 1em;
+    margin: 1.3em;
+    background-color: rgba(97, 97, 97, 0.35);
+    font-size: 1.5em;
+    justify-content: left;
+}
+
+.info label {
+    display: inline-block;
+    width: 50%;
+}
+
+.data input {
+    outline: none;
+    display: inline-block;
+    justify-content: right;
+    border-radius: 0.7em;
+    border: 1px solid #262626;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info div {
+    background-color: rgba(255, 255, 255, 0.14);
+    width: 60%;
+    border-radius: 10px;
+    padding: 0.8em;
+    margin: 0.5em;
+}
+
+.navigation {
+    font-size: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.navigation a {
+    font-size: 18px;
+
+    margin-top: 3em;
+    margin-left: 1em;
+    display: inline;
+    padding: 0.7em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background: #1550E8
 }
 
 @media screen and (max-device-width: 376px) {
@@ -105,7 +155,7 @@ header > .user-profile {
         margin-top: 8em;
     }
 
-    .data {
+    .info {
         grid-template-columns: repeat(1, 1fr);;
     }
 
@@ -116,12 +166,11 @@ header > .user-profile {
     .user-profile {
         display: none;
     }
-
 }
 
 .navigation {
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -131,7 +180,7 @@ header > .user-profile {
 
 .navigation a {
     font-size: 18px;
-    /*font-family: arial, helvetica, sans-serif;*/
+
     margin-top: 3em;
     margin-left: 1em;
     display: inline;

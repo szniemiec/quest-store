@@ -70,14 +70,7 @@ header > .user-profile {
     margin-right: auto;
     width: 20%;
 }
-.logout a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.logout a:hover {
-    color: #1550E8;
 
-}
 .user-profile img {
     display: flex;
     margin-top: 1em;
@@ -92,11 +85,19 @@ header > .user-profile {
 .user-data {
     font-size: 1.3em;
 }
+.logout a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logout a:hover {
+    color: #1550E8;
 
+}
 .content {
     background-color: rgba(97, 97, 97, 0.35);
     padding: 2em;
 }
+
 
 @media screen and (max-device-width: 376px) {
     body {
@@ -114,6 +115,7 @@ header > .user-profile {
     }
 
     .user-profile {
+
         display: none;
     }
 
@@ -121,7 +123,7 @@ header > .user-profile {
 
 .navigation {
     font-size: 18px;
-    font-family: arial, helvetica, sans-serif;
+    /*font-family: arial, helvetica, sans-serif;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
