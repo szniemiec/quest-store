@@ -5,23 +5,27 @@ const form = document.querySelector("#register")
 form.addEventListener('submit', function (e) {
     // zapobiega dwuktronemu wysylaniu formularza
     e.preventDefault();
-    console.log(this.login.value);
-    const data = `login=$(this.login.value)&password=$(this.password.value)&email=$(this.email.value)&firstName=$(this.firstName.value)&lastName=$(this.lastName.value)`;
-    setLoggedUser(data);
+
+    const data = `login=${this.login.value}&password=${this.password.value}&email=${this.email.value}&firstName=${this.firstName.value}&lastName=${this.lastName.value}`;
+    console.log(data);
+    setStudent(data);
 });
 
-function setLoggedUser(data) {
+function setStudent(data) {
     fetch("http://localhost:8000/register",
         {
-            mode: "no-cors",
+            mode: 'no-cors',
             method: "POST",
             body: data
         })
-
+        // .then(function (response) {
+        //     return response.json();
+        // })
         .then(function (response) {
-            return response.json();
+            console.log(response);
         })
-        .then(function (data) {
-            console.log(data);
-        })
+}
+function showMessage() {
+    document.querySelector(".message").classList.toggle("hide");
+    return false;
 }
