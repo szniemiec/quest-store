@@ -5,7 +5,8 @@ const form = document.querySelector("#login-form")
 form.addEventListener('submit', function (e) {
     // zapobiega dwuktronemu wysylaniu formularza
     e.preventDefault();
-    const data = 'login=$(this.login.value)&password=$(this.password.value)';
+    const data = `login=${this.login.value}&password=${this.password.value}`;
+    console.log(data)
     setLoggedUser(data);
 });
 
@@ -16,11 +17,7 @@ function setLoggedUser(data) {
             method: "POST",
             body: data
         })
-
         .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
+            console.log(response);
         })
 }
