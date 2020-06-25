@@ -1,40 +1,30 @@
 
-table {
+.mentors {
     border: 0.5em solid rgba(255, 255, 255, 0.14);
     text-align: center;
-    background-color: rgba(97, 97, 97, 0.35);
+    background-color: rgba(97, 97, 97, 0.2);
     border-radius: 1em;
     box-sizing: border-box;
     margin: 5em 15em;
 }
-.thead{
-    padding:  5em 0;
+.thead tr {
+  border-bottom-color: #1550E8;
+
 }
 
-table> tbody >tr >td {
-    border-bottom: 1em aqua;
+tr {
+    border-color: #049300;
 }
 
+.tbody tr{
+    border-color: #1550E8;
+}
 table>tbody>tr:last-child >td{
     border-bottom:none ;
 }
-
-/*th td {*/
-/*    border: 1em #1550E8;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    flex-direction: column;*/
-/*    background-color: rgba(255, 255, 255, 0.14);*/
-/*    height: 3em;*/
-/*    width: 50%;*/
-/*    margin: 0.4em;*/
-/*    font-size: 1.5em;*/
-/*}*/
-
-/*.content thead {*/
-/*    text-decoration-color: #bbb9b1;*/
-/*}*/
+.tbody tr:hover {
+    background: rgba(242, 242, 242, 0.78);
+}
 
 @media screen and (max-device-width: 376px) {
     .mentors {
