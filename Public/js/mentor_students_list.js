@@ -12,6 +12,7 @@ function getStudents() {
             innerStudents(students);
         })
 }
+
 function innerStudents(students) {
     const table = document.querySelector(".tbody");
 
@@ -24,7 +25,7 @@ function innerStudents(students) {
             `<td>${student.lastName}</td>` +
             `<td>${student.accountCredentials.login}</td>` +
             `<td>${student.accountCredentials.email}</td>` +
-            `<td>${student.accountCredentials.module}</td>`+
+            `<td>${student.accountCredentials.module}</td>` +
             `<td></td><a href="edit_student.html"> <input type="submit" name="button" value="Edit"></a></td>`;
         table.appendChild(row);
     });
