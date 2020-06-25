@@ -9,6 +9,7 @@
 
 
     <title>Queststore</title>
+    <script src="../Public/js/create_mentor.js" defer></script>
     <script src="https://kit.fontawesome.com/d9b16d40ba.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Roboto+Slab:wght@500&display=swap"
@@ -48,31 +49,33 @@
 
     <div class="infos">
         <p>Create mentor</p>
-        <form action="..." enctype="multipart/form-data">
+        <form action="..." enctype="multipart/form-data" id="register">
             <div>
-                <label class="data">Surname: </label>
-                <input type="text" name="surname">
-            </div>
-            <div>
-                <label class="data"> Name:</label>
-                <input type="name" name="name">
-            </div>
-            <div>
-                <label class="data">E-mail:</label>
-                <input type="email" name="email">
+                <label class="data">Login:</label>
+                <input type="login" name="login">
             </div>
             <div>
                 <label class="data">Password:</label>
                 <input type="password" name="password">
             </div>
             <div>
-                <label class="data">Repeat password:</label>
-                <input type="repeatpassword" name="repeatpassword">
+                <label class="data">E-mail:</label>
+                <input type="email" name="email">
             </div>
             <div>
-                <label class="data"> Profile photo:</label>
-                <input type="file" name="photo">
+                <label class="data">Surname: </label>
+                <input type="text" name="firstName">
             </div>
+            <div>
+                <label class="data"> Name:</label>
+                <input type="name" name="lastName">
+            </div>
+
+
+            <!--            <div>-->
+            <!--                <label class="data"> Profile photo:</label>-->
+            <!--                <input type="file" name="photo">-->
+            <!--            </div>-->
             <input type="submit" name="button" value="Confirm">
         </form>
     </div>
