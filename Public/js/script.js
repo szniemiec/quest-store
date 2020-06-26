@@ -3,7 +3,3 @@ function showMessage() {
     return false;
 }
 
-function showStudents() {
-    window.location="./students.html"
-}
-

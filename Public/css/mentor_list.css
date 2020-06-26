@@ -1,22 +1,29 @@
 
 .mentors {
-    background-color: rgba(97, 97, 97, 0.35);
+    border: 0.5em solid rgba(255, 255, 255, 0.14);
+    text-align: center;
+    background-color: rgba(97, 97, 97, 0.2);
     border-radius: 1em;
     box-sizing: border-box;
-    margin: 0.2em;
-    padding: 1em;
+    margin: 5em 15em;
+}
+.thead tr {
+  border-bottom-color: #1550E8;
+
 }
 
-.mentor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.14);
-    height: 3em;
-    width: 95%;
-    margin: 0.4em;
-    font-size: 1.5em;
+tr {
+    border-color: #049300;
+}
+
+.tbody tr{
+    border-color: #1550E8;
+}
+table>tbody>tr:last-child >td{
+    border-bottom:none ;
+}
+.tbody tr:hover {
+    background: rgba(242, 242, 242, 0.78);
 }
 
 @media screen and (max-device-width: 376px) {
