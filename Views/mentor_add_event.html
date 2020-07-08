@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="../Public/js/mentor_add_quest.js" defer></script>
     <link rel="stylesheet" type="text/css" href="../Public/css/main_style.css">
     <link rel="stylesheet" type="text/css" href="../Public/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../Public/css/mentor_add_event.css">
@@ -47,25 +48,25 @@
     </header>
     <div class="info">
         <p>Add new event</p>
-        <form action="..." enctype="multipart/form-data">
+        <form action="..." enctype="multipart/form-data" id="add_quest">
             <div>
                 <label class="data">Title: </label>
-                <input type="text" name="title">
+                <input type="name" name="name">
             </div>
             <div>
                 <label class="data"> Description:</label>
-                <input type="name" name="description">
+                <input type="description" name="description">
             </div>
             <div>
                 <label class="data">value:</label>
-                <input type="email" name="value">
+                <input type="value" name="value">
             </div>
-            <div>
-                <label class="data"> Image:</label>
-                <input type="file" name="image">
-            </div>
-            <input type="submit" name="button" value="Confirm">
+
+            <input type="submit" name="button" value="Confirm" on onclick="showMessage()">
         </form>
+    </div>
+    <div class="message confirm hide">
+        Quest added!
     </div>
 </div>
 </body>

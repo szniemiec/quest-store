@@ -28,6 +28,21 @@
     padding: 0.8em;
     margin: 0.2em;
 }
+.message {
+    font-size: 1em;
+    border-radius: 1em;
+    color: #049300;
+    width: 25em;
+    margin-left: 1.3em;
+}
+
+.button {
+    margin: 1em;
+}
+
+.hide {
+    display: none;
+}
 
 @media screen and (max-device-width: 376px) {
     .info {
