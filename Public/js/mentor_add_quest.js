@@ -19,10 +19,21 @@ function setQuest(data) {
             body: data
         })
         .then(function (response) {
-
         })
 }
 function showMessage() {
     document.querySelector(".message").classList.toggle("hide");
+    return false;
+}
+function showMessageArtifact() {
+    document.querySelector(".message").classList.toggle("hide");
+    return false;
+}
+function showQuestForm() {
+    document.querySelector(".form-quest").classList.toggle("hide");
+    return false;
+}
+function showArtifactForm() {
+    document.querySelector(".form-artifact").classList.toggle("hide");
     return false;
 }
