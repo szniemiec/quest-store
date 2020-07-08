@@ -1,18 +1,18 @@
 
-const form = document.querySelector("#register")
+const form = document.querySelector("#add_quest")
 
 // wysyłamy wpisane dane w login i password po kliknieciu klawisza login - flaga "submit"
 form.addEventListener('submit', function (e) {
     // zapobiega dwuktronemu wysylaniu formularza
     e.preventDefault();
 
-    const data = `login=${this.login.value}&password=${this.password.value}&email=${this.email.value}&firstName=${this.firstName.value}&lastName=${this.lastName.value}`;
+    const data = `name=${this.name.value}&description=${this.description.value}&reward=${this.value.value}`;
 
-    setStudent(data);
+    setQuest(data);
 });
 
-function setStudent(data) {
-    fetch("http://localhost:8000/create-mentor",
+function setQuest(data) {
+    fetch("http://localhost:8000/add-quest",
         {
             mode: 'no-cors',
             method: "POST",

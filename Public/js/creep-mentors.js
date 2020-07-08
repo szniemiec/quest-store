@@ -1,7 +1,7 @@
 const container = document.querySelector(".mentors")
 
 function getMentors() {
-    fetch('http://localhost:8000/mentor')
+    fetch('http://localhost:8000/creep/mentors')
         .then(function (response) {
             // const mentors = response.clone().json()
             if (response.ok) {
@@ -27,5 +27,4 @@ function innerMentors(mentors) {
         table.appendChild(row);
     });
 }
-
 getMentors();
