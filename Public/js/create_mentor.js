@@ -7,22 +7,19 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     const data = `login=${this.login.value}&password=${this.password.value}&email=${this.email.value}&firstName=${this.firstName.value}&lastName=${this.lastName.value}`;
-    console.log(data);
+
     setStudent(data);
 });
 
 function setStudent(data) {
-    fetch("http://localhost:8000/register",
+    fetch("http://localhost:8000/create-mentor",
         {
             mode: 'no-cors',
             method: "POST",
             body: data
         })
-        // .then(function (response) {
-        //     return response.json();
-        // })
         .then(function (response) {
-            console.log(response);
+
         })
 }
 function showMessage() {
