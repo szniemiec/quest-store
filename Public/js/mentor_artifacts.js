@@ -1,7 +1,7 @@
 const container = document.querySelector(".cards")
 
 function getArtifacts() {
-    fetch('http://localhost:8000/artifacts')
+    fetch('http://localhost:8000/artifact')
         .then(function (response) {
             if (response.ok) {
                 return response.json();
@@ -19,7 +19,7 @@ function innerArtifacts(artifacts) {
         let card = document.createElement("div");
         card.setAttribute('class', 'card');
         card.innerHTML =
-            `<div class="card-title">${artifact.name}</div>` +
+            `<div class="card-title">${artifact.title}</div>` +
             `<div class="card-description">${artifact.description}</div>` +
             `<div class="card-pillPrice">Price : ${artifact.cost}</div>`;
 
