@@ -1,4 +1,3 @@
-
 const form = document.querySelector("#login-form")
 
 // wysyłamy wpisane dane w login i password po kliknieciu klawisza login - flaga "submit"
@@ -20,13 +19,20 @@ function setLoggedUser(data) {
             let user = response.json();
             return user;
         })
-        .then (function (user) {
+        .then(function (user) {
             console.log(user)
-            if(user.accountCredentials.roleEnum === 'MENTOR'){
+            if (user.accountCredentials.roleEnum === 'MENTOR') {
                 sessionStorage.setItem('id', user.id);
-                sessionStorage.setItem('role',2);
+                sessionStorage.setItem('role', 2);
+                window.location.replace("mentor_shop.html");
+            } else if (user.accountCredentials.roleEnum === 'CREEP') {
+                sessionStorage.setItem('id', user.id);
+                sessionStorage.setItem('role', 1);
                 window.location.replace("navigation.html");
+            } else if (user.accountCredentials.roleEnum === 'CODECOOLER') {
+                sessionStorage.setItem('id', user.id);
+                sessionStorage.setItem('role', 3);
+                window.location.replace("wallet.html");
             }
-
         })
 }
