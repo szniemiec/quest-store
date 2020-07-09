@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="../Public/js/mentor_add_quest.js" defer></script>
+    <script src="../Public/js/mentor_add_artifact.js" defer></script>
     <link rel="stylesheet" type="text/css" href="../Public/css/main_style.css">
     <link rel="stylesheet" type="text/css" href="../Public/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../Public/css/mentor_add_event.css">
@@ -47,8 +48,28 @@
         </div>
     </header>
     <div class="info">
-        <p>Add new event</p>
-        <form action="..." enctype="multipart/form-data" id="add_quest">
+        <input type="button" name="" value="Add new Artifact" onclick="showArtifactForm()" >
+        <form action="..." enctype="multipart/form-data" id="add_artifact" class="form-artifact hide">
+            <div>
+                <label class="data">Title: </label>
+                <input type="title" name="title">
+            </div>
+            <div>
+                <label class="data"> Description:</label>
+                <input type="description" name="description">
+            </div>
+            <div>
+                <label class="data">value:</label>
+                <input type="cost" name="cost">
+            </div>
+
+            <input type="submit" name="button" value="Confirm" onclick="showMessageArtifact()">
+        </form>
+        <div class="message confirm-artifact hide">
+            Artifact added!
+        </div>
+        <input type="button" name="" value="Add new Quest" onclick="showQuestForm()" >
+        <form action="..." enctype="multipart/form-data" id="add_quest" class="form-quest hide">
             <div>
                 <label class="data">Title: </label>
                 <input type="name" name="name">
@@ -65,7 +86,7 @@
             <input type="submit" name="button" value="Confirm" on onclick="showMessage()">
         </form>
     </div>
-    <div class="message confirm hide">
+    <div class="message confirm-quest hide">
         Quest added!
     </div>
 </div>

@@ -13,11 +13,20 @@ form.addEventListener('submit', function (e) {
 function setLoggedUser(data) {
     fetch("http://localhost:8000/login",
         {
-            mode: "no-cors",
             method: "POST",
             body: data
         })
         .then(function (response) {
-            console.log(response);
+            let user = response.json();
+            return user;
+        })
+        .then (function (user) {
+            console.log(user)
+            if(user.accountCredentials.roleEnum === 'MENTOR'){
+                sessionStorage.setItem('id', user.id);
+                sessionStorage.setItem('role',2);
+                window.location.replace("navigation.html");
+            }
+
         })
 }
