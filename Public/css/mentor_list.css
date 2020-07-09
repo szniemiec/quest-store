@@ -1,15 +1,16 @@
 
 .mentors {
-    border: 0.5em solid rgba(255, 255, 255, 0.14);
+    font-size: 1.3em;
+    border: 0.2em solid rgb(21, 80, 232);
     text-align: center;
     background-color: rgba(97, 97, 97, 0.2);
     border-radius: 1em;
     box-sizing: border-box;
     margin: 5em 15em;
+    box-shadow: 5px 4px 8px 0px #3a3a3ad1;
 }
 .thead tr {
   border-bottom-color: #1550E8;
-
 }
 
 tr {

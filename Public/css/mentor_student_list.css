@@ -1,9 +1,14 @@
 
 .students {
+    font-size: 1.3em;
     background-color: rgba(97, 97, 97, 0.35);
     border-radius: 1em;
-    margin: 0.2em;
+    margin: 5em 15em;
     padding: 1em;
+    text-align: center;
+    border: 0.2em solid rgb(21, 80, 232);
+    box-shadow: 5px 4px 8px 0px #3a3a3ad1;
+
 }
 
 .students input {
