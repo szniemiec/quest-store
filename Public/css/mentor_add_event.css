@@ -3,7 +3,7 @@
     border-radius: 1em;
     margin: 1em;
     background-color: rgba(97, 97, 97, 0.35);
-    font-size: 1.5em;
+    font-size: 1em;
     justify-content: left;
 }
 
@@ -13,8 +13,10 @@
 }
 
 .info input {
+    margin: 1em;
+    padding: 0.3em;
     outline: none;
-    display: inline-block;
+    display: block;
     justify-content: right;
     border-radius: 0.7em;
     border: 1px solid #262626;
@@ -25,7 +27,7 @@
     background-color: rgba(255, 255, 255, 0.14);
     width: 60%;
     border-radius: 1em;
-    padding: 0.8em;
+    padding: 0.5em;
     margin: 0.2em;
 }
 .message {
