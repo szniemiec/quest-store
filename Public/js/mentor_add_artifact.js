@@ -1,4 +1,3 @@
-
 const formArtifact = document.querySelector("#add_artifact")
 
 // wysyłamy wpisane dane w login i password po kliknieciu klawisza login - flaga "submit"
@@ -12,16 +11,16 @@ formArtifact.addEventListener('submit', function (e) {
 });
 
 function setArtifact(data) {
-    fetch("http://localhost:8000/add-artifact",
+    fetch("http://localhost:8000/artifact",
         {
             mode: 'no-cors',
             method: "POST",
             body: data
         })
         .then(function (response) {
-
         })
 }
+
 function showMessage() {
     document.querySelector(".message").classList.toggle("hide");
     return false;
