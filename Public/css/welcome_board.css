@@ -1,0 +1,17 @@
+.board  {
+    background-color: rgba(97, 97, 97, 0.35);
+    border-radius: 1em;
+    margin: 10em 30em 10em 30em;
+    padding: 1em;
+    text-align: center;
+    border: 0.1em solid black;
+    box-shadow: 5px 4px 8px 0px #3a3a3ad1;
+}
+.welcome{
+font-size: 4em;
+    color: #049300;
+}
+.description{
+    color: #262626;
+
+}
