@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="../Public/js/security.js" defer></script>
+    <script src="../Public/js/mentor_students_list.js" defer></script>
     <link rel="stylesheet" type="text/css" href="../Public/css/main_style.css">
     <link rel="stylesheet" type="text/css" href="../Public/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../Public/css/student_list.css">
@@ -36,7 +37,7 @@
 
             <div class="user-data">
                 <p>Adam Kowalski</p>
-                <p>Administrator</p>
+                <p>Creep</p>
                 <div class="logout">
                 <p>Logout</p>
             </div>
@@ -44,17 +45,21 @@
         </div>
     </header>
 
-    <div class="content">
-        <div class="students">
-            <div class="student">student 1</div>
-            <div class="student">student 2</div>
-            <div class="student">student 3</div>
-            <div class="student">student 4</div>
-            <div class="student">student 5</div>
-            <div class="student">student 6</div>
-        </div>
-    </div>
-
+    <table class="students">
+        <thead class="thead">
+        <tr>
+            <th>ID</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>LOGIN</th>
+            <th>E-MAIL</th>
+            <th>MODULE</th>
+            <th> </th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
